@@ -259,8 +259,8 @@ describe("Default and overriding options", function()
 		
 		expect(urls[0]).to.equal("/");
 		expect(urls[1]).to.equal("/?var2=asdf");
-		//expect(urls[2]).to.equal("//www.domain.com/?var1=&var2&var3=");
-		//expect(urls[3]).to.equal("//www.domain.com/?var=&var2=asdf&var3");
+		expect(urls[2]).to.equal("//www.domain.com/?var1&var2&var3");
+		expect(urls[3]).to.equal("//www.domain.com/?var&var2=asdf&var3");
 		
 		done();
 	});

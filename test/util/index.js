@@ -21,9 +21,12 @@ function each(obj, callback)
 		{
 			for (var i in obj)
 			{
-				cancel = each(obj[i], callback) === false;
-				
-				if (cancel) break;
+				if ( obj.hasOwnProperty(i) )
+				{
+					cancel = each(obj[i], callback) === false;
+					
+					if (cancel) break;
+				}
 			}
 		}
 	}

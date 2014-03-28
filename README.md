@@ -112,13 +112,13 @@ var result3 = instance.relate(to3);
 ```
 
 ## Release History
+* 0.2.0 code cleanup, `options.removeEmptyQueries=true` only applied to unrelated URLs
 * 0.1.0 initial release
 
 ## Roadmap
-* 0.1.x code cleanup
-* 0.1.x make `options.removeEmptyQueries=true` only apply to unrelated URLs
-* 0.2.0 decipher and return invalid input (special cases) to complete test suite
-* 0.3.0 test `options.slashesDenoteHost=false`
+* 0.2.1 try to shorten query-relative URLs, test variations list with other site URLs
+* 0.2.2 decipher and return invalid input (special cases) to complete test suite
+* 0.3.0 test `options.slashesDenoteHost=false`, add something like `options.externalDirectoryIndexes=[]` for external sites
 
 ---
 
