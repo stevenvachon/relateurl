@@ -1,19 +1,19 @@
 # relateurl [![NPM Version](http://badge.fury.io/js/relateurl.png)](http://badge.fury.io/js/relateurl) [![Build Status](https://secure.travis-ci.org/stevenvachon/relateurl.png)](http://travis-ci.org/stevenvachon/relateurl)
 
-> Shorten URLs by converting them from absolute to relative.
+> Minify URLs by converting them from absolute to relative.
 
-If you were to use this library on a website like *http;//example.com/dir1/dir1-1/*, you would get results like these:
+If you were to use this library on a website like `http://example.com/dir1/dir1-1/`, you would get results such as:
 
-| Before                                    | After                              |
-| :---------------------------------------- | :--------------------------------- |
-| http;//example.com/dir1/dir1-2/index.html | ../dir1-2/                         |
-| http;//example.com/dir2/dir2-1/           | /dir2/dir2-1/                      |
-| http;//example.com/dir1/dir1-1/           | ./                                 |
-| *https*;//example.com/dir1/dir1-1/        | *https*;//example.com/dir1/dir1-1/ |
-| http;//google.com/dir/                    | //google.com/dir/                  |
-| ../../../../../../../../#anchor           | /#anchor                           |
+| Before                                      | After                                |
+| :------------------------------------------ | :----------------------------------- |
+| `http://example.com/dir1/dir1-2/index.html` | `../dir1-2/`                         |
+| `http://example.com/dir2/dir2-1/`           | `/dir2/dir2-1/`                      |
+| `http://example.com/dir1/dir1-1/`           | ` `                                  |
+| `https://example.com/dir1/dir1-1/`          | `https://example.com/dir1/dir1-1/`   |
+| `http://google.com:80/dir/`                 | `//google.com/dir/`                  |
+| `../../../../../../../../#anchor`           | `/#anchor`                           |
 
-**All string parsing.** *No* directory browsing. It is very fast and lightweight with zero dependencies.
+**All string parsing.** *No* directory browsing. It is thoroughly tested, very fast and lightweight with zero external dependencies.
 
 ## Getting Started
 
@@ -50,7 +50,7 @@ Default value: `RelateUrl.SHORTEST`
 `RelateUrl.ABSOLUTE` will produce an absolute URL. Overrides [`options.schemeRelative`](#options.schemeRelative) with a value of `false`.  
 `RelateUrl.PATH_RELATIVE` will produce something like `../child-of-parent/etc/`.  
 `RelateUrl.ROOT_RELATIVE` will produce something like `/child-of-root/etc/`.  
-`RelateUrl.SHORTEST` will choose whichever is shortest between root- or path-relative.  
+`RelateUrl.SHORTEST` will choose whichever is shortest between root- and path-relative.  
 
 #### options.rejectedSchemes
 Type: `Array`   
@@ -91,7 +91,7 @@ Passed to Node's [`url.parse`](http://nodejs.org/api/url.html#url_url_parse_urls
 ### Examples
 This library can be used as a [function for single-use](#single-instance) or as a [class for multiple conversions](#reusable-instances).
 
-Upon successful conversion, a `String` will be returned. If an issue is encountered, `false` will be returned.
+Upon successful conversion, a `String` will be returned. If an issue is encountered while parsing `from`, an error will be thrown.
 
 #### Single Instance
 ```js
@@ -111,12 +111,19 @@ var result2 = instance.relate(to2, customOptions);
 var result3 = instance.relate(to3);
 ```
 
+## FAQ
+1. **Why bother writing/using this?**  
+To aid in further minifying HTML, mainly for the purpose of faster page loads and SEO.
+
+2. **Why not just use Node's `url.parse`, `url.resolve` and `path.relative`?**  
+`url.parse` *is* used, but `url.resolve` and `path.relative` are both slower and less powerful than this library.
+
 ## Release History
+* 0.2.1 shorten resource- and query-relative URLs, test variations list with other site URLs
 * 0.2.0 code cleanup, `options.removeEmptyQueries=true` only applied to unrelated URLs
 * 0.1.0 initial release
 
 ## Roadmap
-* 0.2.1 try to shorten query-relative URLs, test variations list with other site URLs
 * 0.2.2 decipher and return invalid input (special cases) to complete test suite
 * 0.3.0 test `options.slashesDenoteHost=false`, add something like `options.externalDirectoryIndexes=[]` for external sites
 

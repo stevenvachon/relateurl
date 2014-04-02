@@ -1,5 +1,5 @@
 var data = require("./data/variations");
-var util = require("./util");
+var process = require("./util").process;
 
 var urlCount = 0;
 
@@ -16,22 +16,7 @@ describe("URL variations", function()
 	
 	it("should be accurately processed with RelateUrl.ABSOLUTE", function(done)
 	{
-		var instance = new RelateUrl(data.site, {output:RelateUrl.ABSOLUTE});
-		
-		util.traverse(data.tests, function(test)
-		{
-			//console.log(test.href);
-			
-			var result = instance.relate(test.href);
-			
-			//console.log(result);
-			
-			expect(result).to.equal(test.expected_ABSOLUTE);
-			
-			//console.log("=============");
-			
-			urlCount++;
-		});
+		urlCount += process(data, false, {output:RelateUrl.ABSOLUTE});
 		
 		done();
 	});
@@ -40,22 +25,7 @@ describe("URL variations", function()
 	
 	it("should be accurately processed with RelateUrl.PATH_RELATIVE", function(done)
 	{
-		var instance = new RelateUrl(data.site, {output:RelateUrl.PATH_RELATIVE});
-		
-		util.traverse(data.tests, function(test)
-		{
-			//console.log(test.href);
-			
-			var result = instance.relate(test.href);
-			
-			//console.log(result);
-			
-			expect(result).to.equal(test.expected_PATH_RELATIVE);
-			
-			//console.log("=============");
-			
-			urlCount++;
-		});
+		urlCount += process(data, false, {output:RelateUrl.PATH_RELATIVE});
 		
 		done();
 	});
@@ -64,22 +34,7 @@ describe("URL variations", function()
 	
 	it("should be accurately processed with RelateUrl.ROOT_RELATIVE", function(done)
 	{
-		var instance = new RelateUrl(data.site, {output:RelateUrl.ROOT_RELATIVE});
-		
-		util.traverse(data.tests, function(test)
-		{
-			//console.log(test.href);
-			
-			var result = instance.relate(test.href);
-			
-			//console.log(result);
-			
-			expect(result).to.equal(test.expected_ROOT_RELATIVE);
-			
-			//console.log("=============");
-			
-			urlCount++;
-		});
+		urlCount += process(data, false, {output:RelateUrl.ROOT_RELATIVE});
 		
 		done();
 	});
@@ -88,22 +43,7 @@ describe("URL variations", function()
 	
 	it("should be accurately processed with RelateUrl.SHORTEST", function(done)
 	{
-		var instance = new RelateUrl(data.site, {output:RelateUrl.SHORTEST});
-		
-		util.traverse(data.tests, function(test)
-		{
-			//console.log(test.href);
-			
-			var result = instance.relate(test.href);
-			
-			//console.log(result);
-			
-			expect(result).to.equal(test.expected_SHORTEST);
-			
-			//console.log("=============");
-			
-			urlCount++;
-		});
+		urlCount += process(data, false, {output:RelateUrl.SHORTEST});
 		
 		done();
 	});
@@ -112,7 +52,7 @@ describe("URL variations", function()
 	
 	/*it.only("quick test", function(done)
 	{
-		console.log( RelateUrl.relate("http://user:pass@www.domain.com/./../test/../tes.ter/index.html", "http", {output:RelateUrl.PATH_RELATIVE}) );
+		console.log( RelateUrl.relate("http://user:pass@www.domain.com/", "?", {output:RelateUrl.PATH_RELATIVE}) );
 		
 		//console.log( decodeURIComponent(escape(RelateUrl.relate("http://www.webserver.com/", "http://例子.测试"))) );
 		

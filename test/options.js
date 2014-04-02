@@ -1,9 +1,19 @@
-var util = require("./util");
+var data = require("./data/options");
+var process = require("./util").process;
+
+var urlCount = 0;
 
 
 
 describe("Default and overriding options", function()
 {
+	after( function()
+	{
+		console.log("      (Processed "+urlCount+" URLs)");
+	});
+	
+	
+	
 	it("should work with reusable instances", function(done)
 	{
 		var data,urls,instance;
@@ -49,6 +59,8 @@ describe("Default and overriding options", function()
 		expect(urls[2]).to.equal(data.expected_ROOT_RELATIVE);
 		expect(urls[3]).to.equal(data.expected_ROOT_RELATIVE);
 		
+		urlCount += 6;	// including sites
+		
 		done();
 	});
 	
@@ -78,6 +90,8 @@ describe("Default and overriding options", function()
 		expect(urls[2]).to.equal(data.expected_SHORTEST);
 		expect(urls[3]).to.equal(data.expected_SHORTEST);
 		
+		urlCount += 8;	// including sites
+		
 		done();
 	});
 	
@@ -85,22 +99,10 @@ describe("Default and overriding options", function()
 	
 	it("should support options.defaultPorts", function(done)
 	{
-		var instance = new RelateUrl("http://www.domain.com/",
+		urlCount += process( data["options.defaultPorts"], true,
 		{
-			defaultPorts: {sftp:22, ssh:22},
-			output: RelateUrl.ABSOLUTE
+			defaultPorts: {sftp:22, ssh:22}
 		});
-		
-		var urls =
-		{
-			http: instance.relate("http://user:pass@www.domain.com:80/"),
-			sftp: instance.relate("sftp://user:pass@www.domain.com:22/"),
-			ssh:  instance.relate("ssh://user:pass@www.domain.com:22/")
-		};
-		
-		expect(urls.http).to.equal("http://user:pass@www.domain.com/");
-		expect(urls.sftp).to.equal("sftp://user:pass@www.domain.com/");
-		expect(urls.ssh ).to.equal("ssh://user:pass@www.domain.com/");
 		
 		done();
 	});
@@ -109,20 +111,10 @@ describe("Default and overriding options", function()
 	
 	it("should support options.directoryIndexes", function(done)
 	{
-		var instance = new RelateUrl("http://www.domain.com/",
+		urlCount += process( data["options.directoryIndexes"], true,
 		{
-			directoryIndexes: ["default.html"],
-			output: RelateUrl.ABSOLUTE
+			directoryIndexes: ["default.html"]
 		});
-		
-		var urls =
-		{
-			default: instance.relate("http://www.domain.com/default.html"),
-			index:   instance.relate("http://www.domain.com/index.html")
-		};
-		
-		expect(urls.default).to.equal("http://www.domain.com/");
-		expect(urls.index  ).to.equal("http://www.domain.com/");
 		
 		done();
 	});
@@ -131,30 +123,10 @@ describe("Default and overriding options", function()
 	
 	it("should support options.ignore_www = true", function(done)
 	{
-		var options =
+		urlCount += process( data["options.ignore_www"], true,
 		{
-			ignore_www: true,
-			output: RelateUrl.ROOT_RELATIVE
-		};
-		
-		var instances =
-		[
-			new RelateUrl("http://www.domain.com/", options),
-			new RelateUrl("http://domain.com/", options)
-		];
-		
-		var urls =
-		[
-			instances[0].relate("http://www.domain.com/"),
-			instances[0].relate("http://domain.com/"),
-			instances[1].relate("http://www.domain.com/"),
-			instances[1].relate("http://domain.com/")
-		];
-		
-		expect(urls[0]).to.equal("/");
-		expect(urls[1]).to.equal("/");
-		expect(urls[2]).to.equal("/");
-		expect(urls[3]).to.equal("/");
+			ignore_www: true
+		});
 		
 		done();
 	});
@@ -163,20 +135,10 @@ describe("Default and overriding options", function()
 	
 	it("should support options.rejectedSchemes", function(done)
 	{
-		var instance = new RelateUrl("http://www.domain.com/",
+		urlCount += process( data["options.rejectedSchemes"], true,
 		{
-			output: RelateUrl.ABSOLUTE,
 			rejectedSchemes: ["dunno"]
 		});
-		
-		var urls =
-		{
-			dunno: instance.relate("dunno:some-stuff"),
-			http:  instance.relate("http://www.domain.com/")
-		};
-		
-		expect(urls.dunno).to.equal("dunno:some-stuff");
-		expect(urls.http ).to.equal("http://www.domain.com/");
 		
 		done();
 	});
@@ -185,28 +147,10 @@ describe("Default and overriding options", function()
 	
 	it("should support options.removeAuth = true", function(done)
 	{
-		var options =
+		urlCount += process( data["options.removeAuth"], true,
 		{
-			output: RelateUrl.ROOT_RELATIVE,
 			removeAuth: true
-		};
-		
-		var instances =
-		[
-			new RelateUrl("http://user:pass@www.domain.com/", options),
-			new RelateUrl("http://www.domain.com/", options)
-		];
-		
-		var urls =
-		[
-			instances[0].relate("http://www.domain.com/"),
-			instances[0].relate("http://user:pass@www.domain.com/"),
-			instances[1].relate("http://user:pass@www.domain.com/")
-		];
-		
-		expect(urls[0]).to.equal("/");
-		expect(urls[1]).to.equal("/");
-		expect(urls[2]).to.equal("/");
+		});
 		
 		done();
 	});
@@ -215,20 +159,10 @@ describe("Default and overriding options", function()
 	
 	it("should support options.removeDirectoryIndexes = false", function(done)
 	{
-		var instance = new RelateUrl("http://www.domain.com/",
+		urlCount += process( data["options.removeDirectoryIndexes"], true,
 		{
-			output: RelateUrl.ROOT_RELATIVE,
 			removeDirectoryIndexes: false
 		});
-		
-		var urls =
-		[
-			instance.relate("http://www.domain.com/index.html"),
-			instance.relate("http://www.domain.com/other.html"),
-		];
-		
-		expect(urls[0]).to.equal("/index.html");
-		expect(urls[1]).to.equal("/other.html");
 		
 		done();
 	});
@@ -237,30 +171,10 @@ describe("Default and overriding options", function()
 	
 	it("should support options.removeEmptyQueries = true", function(done)
 	{
-		var options =
+		urlCount += process( data["options.removeEmptyQueries"], true,
 		{
-			output: RelateUrl.ROOT_RELATIVE,
 			removeEmptyQueries: true
-		};
-		
-		var instances =
-		[
-			new RelateUrl("http://www.domain.com/", options),
-			new RelateUrl("http://www.other.com/", options)
-		];
-		
-		var urls =
-		[
-			instances[0].relate("http://www.domain.com/?var1=&var2&var3="),
-			instances[0].relate("http://www.domain.com/?var=&var2=asdf&var3"),
-			instances[1].relate("http://www.domain.com/?var1=&var2&var3="),
-			instances[1].relate("http://www.domain.com/?var=&var2=asdf&var3")
-		];
-		
-		expect(urls[0]).to.equal("/");
-		expect(urls[1]).to.equal("/?var2=asdf");
-		expect(urls[2]).to.equal("//www.domain.com/?var1&var2&var3");
-		expect(urls[3]).to.equal("//www.domain.com/?var&var2=asdf&var3");
+		});
 		
 		done();
 	});
@@ -269,13 +183,10 @@ describe("Default and overriding options", function()
 	
 	it("should support options.schemeRelative = false", function(done)
 	{
-		var url = RelateUrl.relate("http://www.domain.com/", "http://www.other.com/",
+		urlCount += process( data["options.schemeRelative"], true,
 		{
-			output: RelateUrl.ROOT_RELATIVE,
 			schemeRelative: false
 		});
-		
-		expect(url).to.equal("http://www.other.com/");
 		
 		done();
 	});
@@ -284,13 +195,10 @@ describe("Default and overriding options", function()
 	
 	it.skip("should support options.slashesDenoteHost = false", function(done)
 	{
-		var url = RelateUrl.relate("http://www.domain.com/", "http://www.other.com/",
+		urlCount += process( data["options.slashesDenoteHost"], true,
 		{
-			output: RelateUrl.ROOT_RELATIVE,
 			slashesDenoteHost: false
 		});
-		
-		//expect(url).to.equal("http://www.other.com/");
 		
 		done();
 	});
