@@ -1,4 +1,4 @@
-# relateurl [![NPM Version](http://badge.fury.io/js/relateurl.png)](http://badge.fury.io/js/relateurl) [![Build Status](https://secure.travis-ci.org/stevenvachon/relateurl.png)](http://travis-ci.org/stevenvachon/relateurl)
+# relateurl [![NPM Version](http://badge.fury.io/js/relateurl.svg)](http://badge.fury.io/js/relateurl) [![Build Status](https://secure.travis-ci.org/stevenvachon/relateurl.svg)](http://travis-ci.org/stevenvachon/relateurl)
 
 > Minify URLs by converting them from absolute to relative.
 
