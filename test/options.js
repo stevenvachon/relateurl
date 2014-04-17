@@ -1,5 +1,7 @@
-var data = require("./data/options");
-var process = require("./util").process;
+var expect    = require("chai").expect;
+var data      = require("./data/options");
+var process   = require("./util").process;
+var RelateUrl = require("../lib");
 
 var urlCount = 0;
 

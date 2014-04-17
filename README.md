@@ -17,7 +17,7 @@ If you were to use this library on a website like `http://example.com/dir1/dir1-
 
 ## Getting Started
 
-This plugin requires [Node.js](http://nodejs.org/) `~0.10`. To install, type this at the command line:
+This utility requires [Node.js](http://nodejs.org/) `~0.10`. To install, type this at the command line:
 ```
 npm install relateurl --save-dev
 ```
@@ -119,12 +119,14 @@ To aid in further minifying HTML, mainly for the purpose of faster page loads an
 `url.parse` *is* used, but `url.resolve` and `path.relative` are both slower and less powerful than this library.
 
 ## Release History
+* 0.2.2 removed task runner
 * 0.2.1 shorten resource- and query-relative URLs, test variations list with other site URLs
 * 0.2.0 code cleanup, `options.removeEmptyQueries=true` only applied to unrelated URLs
 * 0.1.0 initial release
 
 ## Roadmap
-* 0.2.2 decipher and return invalid input (special cases) to complete test suite
+* 0.2.3 shorten absolute URLs like `http://domain.com/?var` to `http://domain.com?var`, etc
+* 0.2.4 decipher and return invalid input (special cases) to complete test suite
 * 0.3.0 test `options.slashesDenoteHost=false`, add something like `options.externalDirectoryIndexes=[]` for external sites
 
 ---

@@ -1,7 +1,7 @@
 {
   "name": "relateurl",
   "description": "Minify URLs by converting them from absolute to relative.",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "homepage": "https://github.com/stevenvachon/relateurl",
   "author": {
     "name": "Steven Vachon",
@@ -18,11 +18,13 @@
   },
   "devDependencies": {
     "chai": "~1.9",
-    "grunt": "~0.4",
-    "grunt-mocha-test": "~0.9"
+    "mocha": "~1.18"
   },
   "engines": {
     "node": ">= 0.6.0"
+  },
+  "scripts": {
+    "test": "node node_modules/mocha/bin/mocha test/ --bail --reporter spec --check-leaks"
   },
   "keywords": [
     "url",

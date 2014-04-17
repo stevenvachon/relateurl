@@ -1,4 +1,5 @@
-var RelateUrl = require("../../lib");
+var expect       = require("chai").expect;
+var RelateUrl    = require("../../lib");
 var shallowMerge = require("../../lib/util/object").shallowMerge;
 
 var outputTypes = [RelateUrl.ABSOLUTE, RelateUrl.PATH_RELATIVE, RelateUrl.ROOT_RELATIVE, RelateUrl.SHORTEST];
