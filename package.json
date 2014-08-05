@@ -1,7 +1,7 @@
 {
   "name": "relateurl",
   "description": "Minify URLs by converting them from absolute to relative.",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "homepage": "https://github.com/stevenvachon/relateurl",
   "author": {
     "name": "Steven Vachon",

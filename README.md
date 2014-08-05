@@ -82,6 +82,12 @@ Default value: `true`
 
 Output URLs relative to the scheme. Example: `http://example.com/` will become `//example.com/`.
 
+#### options.site
+Type: `String`   
+Default value: `undefined`  
+
+An options-based version of the [`from`](#examples) argument. If both are specified, `from` takes priority.
+
 #### options.slashesDenoteHost
 Type: `Boolean`   
 Default value: `true`  
@@ -119,6 +125,7 @@ To aid in further minifying HTML, mainly for the purpose of faster page loads an
 `url.parse` *is* used, but `url.resolve` and `path.relative` are both slower and less powerful than this library.
 
 ## Release History
+* 0.2.4 added `options.site`
 * 0.2.3 added browserify npm-script
 * 0.2.2 removed task runner
 * 0.2.1 shorten resource- and query-relative URLs, test variations list with other site URLs
@@ -126,8 +133,8 @@ To aid in further minifying HTML, mainly for the purpose of faster page loads an
 * 0.1.0 initial release
 
 ## Roadmap
-* 0.2.4 shorten absolute URLs like `http://domain.com/?var` to `http://domain.com?var`, etc
-* 0.2.5 decipher and return invalid input (special cases) to complete test suite
+* 0.2.5 shorten absolute URLs like `http://domain.com/?var` to `http://domain.com?var`, etc
+* 0.2.6 decipher and return invalid input (special cases) to complete test suite
 * 0.3.0 test `options.slashesDenoteHost=false`, add something like `options.externalDirectoryIndexes=[]` for external sites
 
 ---
