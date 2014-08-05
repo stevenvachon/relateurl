@@ -473,6 +473,18 @@ describe("API variations", function()
 		
 		
 		
+		it("should support options.removeRootTrailingSlash = false", function(done)
+		{
+			urlCount += process( data["options.removeRootTrailingSlash"], true,
+			{
+				removeRootTrailingSlash: false
+			});
+			
+			done();
+		});
+		
+		
+		
 		it("should support options.schemeRelative = false", function(done)
 		{
 			urlCount += process( data["options.schemeRelative"], true,

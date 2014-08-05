@@ -13,10 +13,10 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www.domain.com/",
-						"pathRelative": "//user:pass@www.domain.com/",
-						"rootRelative": "//user:pass@www.domain.com/",
-						"shortest":     "//user:pass@www.domain.com/"
+						"absolute":     "http://user:pass@www.domain.com",
+						"pathRelative": "//user:pass@www.domain.com",
+						"rootRelative": "//user:pass@www.domain.com",
+						"shortest":     "//user:pass@www.domain.com"
 					}
 				]
 			},
@@ -25,10 +25,10 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "sftp://user:pass@www.domain.com/",
-						"pathRelative": "sftp://user:pass@www.domain.com/",
-						"rootRelative": "sftp://user:pass@www.domain.com/",
-						"shortest":     "sftp://user:pass@www.domain.com/"
+						"absolute":     "sftp://user:pass@www.domain.com",
+						"pathRelative": "sftp://user:pass@www.domain.com",
+						"rootRelative": "sftp://user:pass@www.domain.com",
+						"shortest":     "sftp://user:pass@www.domain.com"
 					}
 				]
 			},
@@ -37,10 +37,10 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "ssh://user:pass@www.domain.com/",
-						"pathRelative": "ssh://user:pass@www.domain.com/",
-						"rootRelative": "ssh://user:pass@www.domain.com/",
-						"shortest":     "ssh://user:pass@www.domain.com/"
+						"absolute":     "ssh://user:pass@www.domain.com",
+						"pathRelative": "ssh://user:pass@www.domain.com",
+						"rootRelative": "ssh://user:pass@www.domain.com",
+						"shortest":     "ssh://user:pass@www.domain.com"
 					}
 				]
 			}
@@ -59,7 +59,7 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://www.domain.com/",
+						"absolute":     "http://www.domain.com",
 						"pathRelative": "",
 						"rootRelative": "/",
 						"shortest":     ""
@@ -71,7 +71,7 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://www.domain.com/",
+						"absolute":     "http://www.domain.com",
 						"pathRelative": "",
 						"rootRelative": "/",
 						"shortest":     ""
@@ -106,13 +106,13 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://www.domain.com/",
+						"absolute":     "http://www.domain.com",
 						"pathRelative": "",
 						"rootRelative": "/",
 						"shortest":     ""
 					},
 					{
-						"absolute":     "http://domain.com/",
+						"absolute":     "http://domain.com",
 						"pathRelative": "",
 						"rootRelative": "/",
 						"shortest":     ""
@@ -124,13 +124,13 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://www.domain.com/",
+						"absolute":     "http://www.domain.com",
 						"pathRelative": "",
 						"rootRelative": "/",
 						"shortest":     ""
 					},
 					{
-						"absolute":     "http://domain.com/",
+						"absolute":     "http://domain.com",
 						"pathRelative": "",
 						"rootRelative": "/",
 						"shortest":     ""
@@ -164,7 +164,7 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://www.domain.com/",
+						"absolute":     "http://www.domain.com",
 						"pathRelative": "",
 						"rootRelative": "/",
 						"shortest":     ""
@@ -187,13 +187,13 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://www.domain.com/",
+						"absolute":     "http://www.domain.com",
 						"pathRelative": "",
 						"rootRelative": "/",
 						"shortest":     ""
 					},
 					{
-						"absolute":     "http://www.domain.com/",
+						"absolute":     "http://www.domain.com",
 						"pathRelative": "",
 						"rootRelative": "/",
 						"shortest":     ""
@@ -205,13 +205,13 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://www.domain.com/",
+						"absolute":     "http://www.domain.com",
 						"pathRelative": "",
 						"rootRelative": "/",
 						"shortest":     ""
 					},
 					{
-						"absolute":     "http://www.domain.com/",
+						"absolute":     "http://www.domain.com",
 						"pathRelative": "",
 						"rootRelative": "/",
 						"shortest":     ""
@@ -268,16 +268,16 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://www.domain.com/",
+						"absolute":     "http://www.domain.com",
 						"pathRelative": "",
 						"rootRelative": "/",
 						"shortest":     ""
 					},
 					{
-						"absolute":     "http://www.domain.com/?var1&var2&var3",
-						"pathRelative": "//www.domain.com/?var1&var2&var3",
-						"rootRelative": "//www.domain.com/?var1&var2&var3",
-						"shortest":     "//www.domain.com/?var1&var2&var3"
+						"absolute":     "http://www.domain.com?var1&var2&var3",
+						"pathRelative": "//www.domain.com?var1&var2&var3",
+						"rootRelative": "//www.domain.com?var1&var2&var3",
+						"shortest":     "//www.domain.com?var1&var2&var3"
 					}
 				]
 			},
@@ -286,16 +286,38 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://www.domain.com/?var2=asdf",
+						"absolute":     "http://www.domain.com?var2=asdf",
 						"pathRelative": "?var2=asdf",
 						"rootRelative": "/?var2=asdf",
 						"shortest":     "?var2=asdf"
 					},
 					{
-						"absolute":     "http://www.domain.com/?var&var2=asdf&var3",
-						"pathRelative": "//www.domain.com/?var&var2=asdf&var3",
-						"rootRelative": "//www.domain.com/?var&var2=asdf&var3",
-						"shortest":     "//www.domain.com/?var&var2=asdf&var3"
+						"absolute":     "http://www.domain.com?var&var2=asdf&var3",
+						"pathRelative": "//www.domain.com?var&var2=asdf&var3",
+						"rootRelative": "//www.domain.com?var&var2=asdf&var3",
+						"shortest":     "//www.domain.com?var&var2=asdf&var3"
+					}
+				]
+			}
+		]
+	},
+	"options.removeRootTrailingSlash":
+	{
+		"sites":
+		[
+			"http://www.domain.com/"
+		],
+		"tests":
+		[
+			{
+				"href":                 "http://www.domain.com/",
+				"expected":
+				[
+					{
+						"absolute":     "http://www.domain.com/",
+						"pathRelative": "",
+						"rootRelative": "/",
+						"shortest":     ""
 					}
 				]
 			}
@@ -314,10 +336,10 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://www.other.com/",
-						"pathRelative": "http://www.other.com/",
-						"rootRelative": "http://www.other.com/",
-						"shortest":     "http://www.other.com/"
+						"absolute":     "http://www.other.com",
+						"pathRelative": "http://www.other.com",
+						"rootRelative": "http://www.other.com",
+						"shortest":     "http://www.other.com"
 					}
 				]
 			},
@@ -326,10 +348,10 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "https://www.other.com/",
-						"pathRelative": "https://www.other.com/",
-						"rootRelative": "https://www.other.com/",
-						"shortest":     "https://www.other.com/"
+						"absolute":     "https://www.other.com",
+						"pathRelative": "https://www.other.com",
+						"rootRelative": "https://www.other.com",
+						"shortest":     "https://www.other.com"
 					}
 				]
 			}

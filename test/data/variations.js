@@ -474,19 +474,19 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www.domain.com/",
+						"absolute":     "http://user:pass@www.domain.com",
 						"pathRelative": "../",
 						"rootRelative": "/",
 						"shortest":     "/"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/",
+						"absolute":     "http://user:pass@www.domain.com",
 						"pathRelative": "../",
 						"rootRelative": "/",
 						"shortest":     "/"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/",
+						"absolute":     "http://user:pass@www.domain.com",
 						"pathRelative": "../",
 						"rootRelative": "/",
 						"shortest":     "/"
@@ -498,19 +498,19 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www.domain.com/",
+						"absolute":     "http://user:pass@www.domain.com",
 						"pathRelative": "../",
 						"rootRelative": "/",
 						"shortest":     "/"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/",
+						"absolute":     "http://user:pass@www.domain.com",
 						"pathRelative": "../",
 						"rootRelative": "/",
 						"shortest":     "/"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/",
+						"absolute":     "http://user:pass@www.domain.com",
 						"pathRelative": "../",
 						"rootRelative": "/",
 						"shortest":     "/"
@@ -522,19 +522,19 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www.domain.com/",
+						"absolute":     "http://user:pass@www.domain.com",
 						"pathRelative": "../",
 						"rootRelative": "/",
 						"shortest":     "/"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/",
+						"absolute":     "http://user:pass@www.domain.com",
 						"pathRelative": "../",
 						"rootRelative": "/",
 						"shortest":     "/"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/",
+						"absolute":     "http://user:pass@www.domain.com",
 						"pathRelative": "../",
 						"rootRelative": "/",
 						"shortest":     "/"
@@ -546,19 +546,19 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www.domain.com/",
+						"absolute":     "http://user:pass@www.domain.com",
 						"pathRelative": "../",
 						"rootRelative": "/",
 						"shortest":     "/"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/",
+						"absolute":     "http://user:pass@www.domain.com",
 						"pathRelative": "../",
 						"rootRelative": "/",
 						"shortest":     "/"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/",
+						"absolute":     "http://user:pass@www.domain.com",
 						"pathRelative": "../",
 						"rootRelative": "/",
 						"shortest":     "/"
@@ -570,22 +570,22 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www.domain./",
-						"pathRelative": "//user:pass@www.domain./",
-						"rootRelative": "//user:pass@www.domain./",
-						"shortest":     "//user:pass@www.domain./"
+						"absolute":     "http://user:pass@www.domain.",
+						"pathRelative": "//user:pass@www.domain.",
+						"rootRelative": "//user:pass@www.domain.",
+						"shortest":     "//user:pass@www.domain."
 					},
 					{
-						"absolute":     "http://user:pass@www.domain./",
-						"pathRelative": "//user:pass@www.domain./",
-						"rootRelative": "//user:pass@www.domain./",
-						"shortest":     "//user:pass@www.domain./"
+						"absolute":     "http://user:pass@www.domain.",
+						"pathRelative": "//user:pass@www.domain.",
+						"rootRelative": "//user:pass@www.domain.",
+						"shortest":     "//user:pass@www.domain."
 					},
 					{
-						"absolute":     "http://user:pass@www.domain./",
-						"pathRelative": "//user:pass@www.domain./",
-						"rootRelative": "//user:pass@www.domain./",
-						"shortest":     "//user:pass@www.domain./"
+						"absolute":     "http://user:pass@www.domain.",
+						"pathRelative": "//user:pass@www.domain.",
+						"rootRelative": "//user:pass@www.domain.",
+						"shortest":     "//user:pass@www.domain."
 					}
 				]
 			},
@@ -594,22 +594,22 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www.domain./",
-						"pathRelative": "//user:pass@www.domain./",
-						"rootRelative": "//user:pass@www.domain./",
-						"shortest":     "//user:pass@www.domain./"
+						"absolute":     "http://user:pass@www.domain.",
+						"pathRelative": "//user:pass@www.domain.",
+						"rootRelative": "//user:pass@www.domain.",
+						"shortest":     "//user:pass@www.domain."
 					},
 					{
-						"absolute":     "http://user:pass@www.domain./",
-						"pathRelative": "//user:pass@www.domain./",
-						"rootRelative": "//user:pass@www.domain./",
-						"shortest":     "//user:pass@www.domain./"
+						"absolute":     "http://user:pass@www.domain.",
+						"pathRelative": "//user:pass@www.domain.",
+						"rootRelative": "//user:pass@www.domain.",
+						"shortest":     "//user:pass@www.domain."
 					},
 					{
-						"absolute":     "http://user:pass@www.domain./",
-						"pathRelative": "//user:pass@www.domain./",
-						"rootRelative": "//user:pass@www.domain./",
-						"shortest":     "//user:pass@www.domain./"
+						"absolute":     "http://user:pass@www.domain.",
+						"pathRelative": "//user:pass@www.domain.",
+						"rootRelative": "//user:pass@www.domain.",
+						"shortest":     "//user:pass@www.domain."
 					}
 				]
 			},
@@ -618,22 +618,22 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www.domain/",
-						"pathRelative": "//user:pass@www.domain/",
-						"rootRelative": "//user:pass@www.domain/",
-						"shortest":     "//user:pass@www.domain/"
+						"absolute":     "http://user:pass@www.domain",
+						"pathRelative": "//user:pass@www.domain",
+						"rootRelative": "//user:pass@www.domain",
+						"shortest":     "//user:pass@www.domain"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain/",
-						"pathRelative": "//user:pass@www.domain/",
-						"rootRelative": "//user:pass@www.domain/",
-						"shortest":     "//user:pass@www.domain/"
+						"absolute":     "http://user:pass@www.domain",
+						"pathRelative": "//user:pass@www.domain",
+						"rootRelative": "//user:pass@www.domain",
+						"shortest":     "//user:pass@www.domain"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain/",
-						"pathRelative": "//user:pass@www.domain/",
-						"rootRelative": "//user:pass@www.domain/",
-						"shortest":     "//user:pass@www.domain/"
+						"absolute":     "http://user:pass@www.domain",
+						"pathRelative": "//user:pass@www.domain",
+						"rootRelative": "//user:pass@www.domain",
+						"shortest":     "//user:pass@www.domain"
 					}
 				]
 			},
@@ -642,22 +642,22 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www.domain/",
-						"pathRelative": "//user:pass@www.domain/",
-						"rootRelative": "//user:pass@www.domain/",
-						"shortest":     "//user:pass@www.domain/"
+						"absolute":     "http://user:pass@www.domain",
+						"pathRelative": "//user:pass@www.domain",
+						"rootRelative": "//user:pass@www.domain",
+						"shortest":     "//user:pass@www.domain"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain/",
-						"pathRelative": "//user:pass@www.domain/",
-						"rootRelative": "//user:pass@www.domain/",
-						"shortest":     "//user:pass@www.domain/"
+						"absolute":     "http://user:pass@www.domain",
+						"pathRelative": "//user:pass@www.domain",
+						"rootRelative": "//user:pass@www.domain",
+						"shortest":     "//user:pass@www.domain"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain/",
-						"pathRelative": "//user:pass@www.domain/",
-						"rootRelative": "//user:pass@www.domain/",
-						"shortest":     "//user:pass@www.domain/"
+						"absolute":     "http://user:pass@www.domain",
+						"pathRelative": "//user:pass@www.domain",
+						"rootRelative": "//user:pass@www.domain",
+						"shortest":     "//user:pass@www.domain"
 					}
 				]
 			},
@@ -666,22 +666,22 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www./",
-						"pathRelative": "//user:pass@www./",
-						"rootRelative": "//user:pass@www./",
-						"shortest":     "//user:pass@www./"
+						"absolute":     "http://user:pass@www.",
+						"pathRelative": "//user:pass@www.",
+						"rootRelative": "//user:pass@www.",
+						"shortest":     "//user:pass@www."
 					},
 					{
-						"absolute":     "http://user:pass@www./",
-						"pathRelative": "//user:pass@www./",
-						"rootRelative": "//user:pass@www./",
-						"shortest":     "//user:pass@www./"
+						"absolute":     "http://user:pass@www.",
+						"pathRelative": "//user:pass@www.",
+						"rootRelative": "//user:pass@www.",
+						"shortest":     "//user:pass@www."
 					},
 					{
-						"absolute":     "http://user:pass@www./",
-						"pathRelative": "//user:pass@www./",
-						"rootRelative": "//user:pass@www./",
-						"shortest":     "//user:pass@www./"
+						"absolute":     "http://user:pass@www.",
+						"pathRelative": "//user:pass@www.",
+						"rootRelative": "//user:pass@www.",
+						"shortest":     "//user:pass@www."
 					}
 				]
 			},
@@ -690,22 +690,22 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www./",
-						"pathRelative": "//user:pass@www./",
-						"rootRelative": "//user:pass@www./",
-						"shortest":     "//user:pass@www./"
+						"absolute":     "http://user:pass@www.",
+						"pathRelative": "//user:pass@www.",
+						"rootRelative": "//user:pass@www.",
+						"shortest":     "//user:pass@www."
 					},
 					{
-						"absolute":     "http://user:pass@www./",
-						"pathRelative": "//user:pass@www./",
-						"rootRelative": "//user:pass@www./",
-						"shortest":     "//user:pass@www./"
+						"absolute":     "http://user:pass@www.",
+						"pathRelative": "//user:pass@www.",
+						"rootRelative": "//user:pass@www.",
+						"shortest":     "//user:pass@www."
 					},
 					{
-						"absolute":     "http://user:pass@www./",
-						"pathRelative": "//user:pass@www./",
-						"rootRelative": "//user:pass@www./",
-						"shortest":     "//user:pass@www./"
+						"absolute":     "http://user:pass@www.",
+						"pathRelative": "//user:pass@www.",
+						"rootRelative": "//user:pass@www.",
+						"shortest":     "//user:pass@www."
 					}
 				]
 			},
@@ -714,22 +714,22 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www/",
-						"pathRelative": "//user:pass@www/",
-						"rootRelative": "//user:pass@www/",
-						"shortest":     "//user:pass@www/"
+						"absolute":     "http://user:pass@www",
+						"pathRelative": "//user:pass@www",
+						"rootRelative": "//user:pass@www",
+						"shortest":     "//user:pass@www"
 					},
 					{
-						"absolute":     "http://user:pass@www/",
-						"pathRelative": "//user:pass@www/",
-						"rootRelative": "//user:pass@www/",
-						"shortest":     "//user:pass@www/"
+						"absolute":     "http://user:pass@www",
+						"pathRelative": "//user:pass@www",
+						"rootRelative": "//user:pass@www",
+						"shortest":     "//user:pass@www"
 					},
 					{
-						"absolute":     "http://user:pass@www/",
-						"pathRelative": "//user:pass@www/",
-						"rootRelative": "//user:pass@www/",
-						"shortest":     "//user:pass@www/"
+						"absolute":     "http://user:pass@www",
+						"pathRelative": "//user:pass@www",
+						"rootRelative": "//user:pass@www",
+						"shortest":     "//user:pass@www"
 					}
 				]
 			},
@@ -738,22 +738,22 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www/",
-						"pathRelative": "//user:pass@www/",
-						"rootRelative": "//user:pass@www/",
-						"shortest":     "//user:pass@www/"
+						"absolute":     "http://user:pass@www",
+						"pathRelative": "//user:pass@www",
+						"rootRelative": "//user:pass@www",
+						"shortest":     "//user:pass@www"
 					},
 					{
-						"absolute":     "http://user:pass@www/",
-						"pathRelative": "//user:pass@www/",
-						"rootRelative": "//user:pass@www/",
-						"shortest":     "//user:pass@www/"
+						"absolute":     "http://user:pass@www",
+						"pathRelative": "//user:pass@www",
+						"rootRelative": "//user:pass@www",
+						"shortest":     "//user:pass@www"
 					},
 					{
-						"absolute":     "http://user:pass@www/",
-						"pathRelative": "//user:pass@www/",
-						"rootRelative": "//user:pass@www/",
-						"shortest":     "//user:pass@www/"
+						"absolute":     "http://user:pass@www",
+						"pathRelative": "//user:pass@www",
+						"rootRelative": "//user:pass@www",
+						"shortest":     "//user:pass@www"
 					}
 				]
 			},
@@ -762,22 +762,22 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@/",
-						"pathRelative": "//user:pass@/",
-						"rootRelative": "//user:pass@/",
-						"shortest":     "//user:pass@/"
+						"absolute":     "http://user:pass@",
+						"pathRelative": "//user:pass@",
+						"rootRelative": "//user:pass@",
+						"shortest":     "//user:pass@"
 					},
 					{
-						"absolute":     "http://user:pass@/",
-						"pathRelative": "//user:pass@/",
-						"rootRelative": "//user:pass@/",
-						"shortest":     "//user:pass@/"
+						"absolute":     "http://user:pass@",
+						"pathRelative": "//user:pass@",
+						"rootRelative": "//user:pass@",
+						"shortest":     "//user:pass@"
 					},
 					{
-						"absolute":     "http://user:pass@/",
-						"pathRelative": "//user:pass@/",
-						"rootRelative": "//user:pass@/",
-						"shortest":     "//user:pass@/"
+						"absolute":     "http://user:pass@",
+						"pathRelative": "//user:pass@",
+						"rootRelative": "//user:pass@",
+						"shortest":     "//user:pass@"
 					}
 				]
 			},
@@ -786,22 +786,22 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@/",
-						"pathRelative": "//user:pass@/",
-						"rootRelative": "//user:pass@/",
-						"shortest":     "//user:pass@/"
+						"absolute":     "http://user:pass@",
+						"pathRelative": "//user:pass@",
+						"rootRelative": "//user:pass@",
+						"shortest":     "//user:pass@"
 					},
 					{
-						"absolute":     "http://user:pass@/",
-						"pathRelative": "//user:pass@/",
-						"rootRelative": "//user:pass@/",
-						"shortest":     "//user:pass@/"
+						"absolute":     "http://user:pass@",
+						"pathRelative": "//user:pass@",
+						"rootRelative": "//user:pass@",
+						"shortest":     "//user:pass@"
 					},
 					{
-						"absolute":     "http://user:pass@/",
-						"pathRelative": "//user:pass@/",
-						"rootRelative": "//user:pass@/",
-						"shortest":     "//user:pass@/"
+						"absolute":     "http://user:pass@",
+						"pathRelative": "//user:pass@",
+						"rootRelative": "//user:pass@",
+						"shortest":     "//user:pass@"
 					}
 				]
 			},
@@ -858,22 +858,22 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user/",
-						"pathRelative": "//user/",
-						"rootRelative": "//user/",
-						"shortest":     "//user/"
+						"absolute":     "http://user",
+						"pathRelative": "//user",
+						"rootRelative": "//user",
+						"shortest":     "//user"
 					},
 					{
-						"absolute":     "http://user/",
-						"pathRelative": "//user/",
-						"rootRelative": "//user/",
-						"shortest":     "//user/"
+						"absolute":     "http://user",
+						"pathRelative": "//user",
+						"rootRelative": "//user",
+						"shortest":     "//user"
 					},
 					{
-						"absolute":     "http://user/",
-						"pathRelative": "//user/",
-						"rootRelative": "//user/",
-						"shortest":     "//user/"
+						"absolute":     "http://user",
+						"pathRelative": "//user",
+						"rootRelative": "//user",
+						"shortest":     "//user"
 					}
 				]
 			},
@@ -882,22 +882,22 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user/",
-						"pathRelative": "//user/",
-						"rootRelative": "//user/",
-						"shortest":     "//user/"
+						"absolute":     "http://user",
+						"pathRelative": "//user",
+						"rootRelative": "//user",
+						"shortest":     "//user"
 					},
 					{
-						"absolute":     "http://user/",
-						"pathRelative": "//user/",
-						"rootRelative": "//user/",
-						"shortest":     "//user/"
+						"absolute":     "http://user",
+						"pathRelative": "//user",
+						"rootRelative": "//user",
+						"shortest":     "//user"
 					},
 					{
-						"absolute":     "http://user/",
-						"pathRelative": "//user/",
-						"rootRelative": "//user/",
-						"shortest":     "//user/"
+						"absolute":     "http://user",
+						"pathRelative": "//user",
+						"rootRelative": "//user",
+						"shortest":     "//user"
 					}
 				]
 			},
@@ -906,22 +906,22 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http:///",
-						"pathRelative": "///",
-						"rootRelative": "///",
-						"shortest":     "///"
+						"absolute":     "http://",
+						"pathRelative": "//",
+						"rootRelative": "//",
+						"shortest":     "//"
 					},
 					{
-						"absolute":     "http:///",
-						"pathRelative": "///",
-						"rootRelative": "///",
-						"shortest":     "///"
+						"absolute":     "http://",
+						"pathRelative": "//",
+						"rootRelative": "//",
+						"shortest":     "//"
 					},
 					{
-						"absolute":     "http:///",
-						"pathRelative": "///",
-						"rootRelative": "///",
-						"shortest":     "///"
+						"absolute":     "http://",
+						"pathRelative": "//",
+						"rootRelative": "//",
+						"shortest":     "//"
 					}
 				]
 			},
@@ -930,22 +930,22 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http:///",
-						"pathRelative": "///",
-						"rootRelative": "///",
-						"shortest":     "///"
+						"absolute":     "http://",
+						"pathRelative": "//",
+						"rootRelative": "//",
+						"shortest":     "//"
 					},
 					{
-						"absolute":     "http:///",
-						"pathRelative": "///",
-						"rootRelative": "///",
-						"shortest":     "///"
+						"absolute":     "http://",
+						"pathRelative": "//",
+						"rootRelative": "//",
+						"shortest":     "//"
 					},
 					{
-						"absolute":     "http:///",
-						"pathRelative": "///",
-						"rootRelative": "///",
-						"shortest":     "///"
+						"absolute":     "http://",
+						"pathRelative": "//",
+						"rootRelative": "//",
+						"shortest":     "//"
 					}
 				]
 			},
@@ -954,22 +954,22 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http:///",
-						"pathRelative": "///",
-						"rootRelative": "///",
-						"shortest":     "///"
+						"absolute":     "http://",
+						"pathRelative": "//",
+						"rootRelative": "//",
+						"shortest":     "//"
 					},
 					{
-						"absolute":     "http:///",
-						"pathRelative": "///",
-						"rootRelative": "///",
-						"shortest":     "///"
+						"absolute":     "http://",
+						"pathRelative": "//",
+						"rootRelative": "//",
+						"shortest":     "//"
 					},
 					{
-						"absolute":     "http:///",
-						"pathRelative": "///",
-						"rootRelative": "///",
-						"shortest":     "///"
+						"absolute":     "http://",
+						"pathRelative": "//",
+						"rootRelative": "//",
+						"shortest":     "//"
 					}
 				]
 			},
@@ -978,22 +978,22 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http:///",
-						"pathRelative": "///",
-						"rootRelative": "///",
-						"shortest":     "///"
+						"absolute":     "http://",
+						"pathRelative": "//",
+						"rootRelative": "//",
+						"shortest":     "//"
 					},
 					{
-						"absolute":     "http:///",
-						"pathRelative": "///",
-						"rootRelative": "///",
-						"shortest":     "///"
+						"absolute":     "http://",
+						"pathRelative": "//",
+						"rootRelative": "//",
+						"shortest":     "//"
 					},
 					{
-						"absolute":     "http:///",
-						"pathRelative": "///",
-						"rootRelative": "///",
-						"shortest":     "///"
+						"absolute":     "http://",
+						"pathRelative": "//",
+						"rootRelative": "//",
+						"shortest":     "//"
 					}
 				]
 			},
@@ -1413,22 +1413,22 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://tes.ter/?va%20r1=++dir&var2=text&var3#anchor",
-						"pathRelative": "//tes.ter/?va%20r1=++dir&var2=text&var3#anchor",
-						"rootRelative": "//tes.ter/?va%20r1=++dir&var2=text&var3#anchor",
-						"shortest":     "//tes.ter/?va%20r1=++dir&var2=text&var3#anchor"
+						"absolute":     "http://tes.ter?va%20r1=++dir&var2=text&var3#anchor",
+						"pathRelative": "//tes.ter?va%20r1=++dir&var2=text&var3#anchor",
+						"rootRelative": "//tes.ter?va%20r1=++dir&var2=text&var3#anchor",
+						"shortest":     "//tes.ter?va%20r1=++dir&var2=text&var3#anchor"
 					},
 					{
-						"absolute":     "http://tes.ter/?va%20r1=++dir&var2=text&var3#anchor",
-						"pathRelative": "//tes.ter/?va%20r1=++dir&var2=text&var3#anchor",
-						"rootRelative": "//tes.ter/?va%20r1=++dir&var2=text&var3#anchor",
-						"shortest":     "//tes.ter/?va%20r1=++dir&var2=text&var3#anchor"
+						"absolute":     "http://tes.ter?va%20r1=++dir&var2=text&var3#anchor",
+						"pathRelative": "//tes.ter?va%20r1=++dir&var2=text&var3#anchor",
+						"rootRelative": "//tes.ter?va%20r1=++dir&var2=text&var3#anchor",
+						"shortest":     "//tes.ter?va%20r1=++dir&var2=text&var3#anchor"
 					},
 					{
-						"absolute":     "http://tes.ter/?va%20r1=++dir&var2=text&var3#anchor",
-						"pathRelative": "//tes.ter/?va%20r1=++dir&var2=text&var3#anchor",
-						"rootRelative": "//tes.ter/?va%20r1=++dir&var2=text&var3#anchor",
-						"shortest":     "//tes.ter/?va%20r1=++dir&var2=text&var3#anchor"
+						"absolute":     "http://tes.ter?va%20r1=++dir&var2=text&var3#anchor",
+						"pathRelative": "//tes.ter?va%20r1=++dir&var2=text&var3#anchor",
+						"rootRelative": "//tes.ter?va%20r1=++dir&var2=text&var3#anchor",
+						"shortest":     "//tes.ter?va%20r1=++dir&var2=text&var3#anchor"
 					}
 				]
 			},
@@ -1437,19 +1437,19 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www.domain.com/?va%20r1=++dir&var2=text&var3#anchor",
+						"absolute":     "http://user:pass@www.domain.com?va%20r1=++dir&var2=text&var3#anchor",
 						"pathRelative": "../?va%20r1=++dir&var2=text&var3#anchor",
 						"rootRelative": "/?va%20r1=++dir&var2=text&var3#anchor",
 						"shortest":     "/?va%20r1=++dir&var2=text&var3#anchor"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/?va%20r1=++dir&var2=text&var3#anchor",
+						"absolute":     "http://user:pass@www.domain.com?va%20r1=++dir&var2=text&var3#anchor",
 						"pathRelative": "../?va%20r1=++dir&var2=text&var3#anchor",
 						"rootRelative": "/?va%20r1=++dir&var2=text&var3#anchor",
 						"shortest":     "/?va%20r1=++dir&var2=text&var3#anchor"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/?va%20r1=++dir&var2=text&var3#anchor",
+						"absolute":     "http://user:pass@www.domain.com?va%20r1=++dir&var2=text&var3#anchor",
 						"pathRelative": "../?va%20r1=++dir&var2=text&var3#anchor",
 						"rootRelative": "/?va%20r1=++dir&var2=text&var3#anchor",
 						"shortest":     "/?va%20r1=++dir&var2=text&var3#anchor"
@@ -1485,19 +1485,19 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www.domain.com/?va%20r1=++dir&var2=text&var3#anchor",
+						"absolute":     "http://user:pass@www.domain.com?va%20r1=++dir&var2=text&var3#anchor",
 						"pathRelative": "../?va%20r1=++dir&var2=text&var3#anchor",
 						"rootRelative": "/?va%20r1=++dir&var2=text&var3#anchor",
 						"shortest":     "/?va%20r1=++dir&var2=text&var3#anchor"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/?va%20r1=++dir&var2=text&var3#anchor",
+						"absolute":     "http://user:pass@www.domain.com?va%20r1=++dir&var2=text&var3#anchor",
 						"pathRelative": "../?va%20r1=++dir&var2=text&var3#anchor",
 						"rootRelative": "/?va%20r1=++dir&var2=text&var3#anchor",
 						"shortest":     "/?va%20r1=++dir&var2=text&var3#anchor"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/?va%20r1=++dir&var2=text&var3#anchor",
+						"absolute":     "http://user:pass@www.domain.com?va%20r1=++dir&var2=text&var3#anchor",
 						"pathRelative": "../?va%20r1=++dir&var2=text&var3#anchor",
 						"rootRelative": "/?va%20r1=++dir&var2=text&var3#anchor",
 						"shortest":     "/?va%20r1=++dir&var2=text&var3#anchor"
@@ -1509,19 +1509,19 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www.domain.com/?va%20r1=++dir&var2=text&var3#anchor",
+						"absolute":     "http://user:pass@www.domain.com?va%20r1=++dir&var2=text&var3#anchor",
 						"pathRelative": "../?va%20r1=++dir&var2=text&var3#anchor",
 						"rootRelative": "/?va%20r1=++dir&var2=text&var3#anchor",
 						"shortest":     "/?va%20r1=++dir&var2=text&var3#anchor"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/?va%20r1=++dir&var2=text&var3#anchor",
+						"absolute":     "http://user:pass@www.domain.com?va%20r1=++dir&var2=text&var3#anchor",
 						"pathRelative": "../?va%20r1=++dir&var2=text&var3#anchor",
 						"rootRelative": "/?va%20r1=++dir&var2=text&var3#anchor",
 						"shortest":     "/?va%20r1=++dir&var2=text&var3#anchor"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/?va%20r1=++dir&var2=text&var3#anchor",
+						"absolute":     "http://user:pass@www.domain.com?va%20r1=++dir&var2=text&var3#anchor",
 						"pathRelative": "../?va%20r1=++dir&var2=text&var3#anchor",
 						"rootRelative": "/?va%20r1=++dir&var2=text&var3#anchor",
 						"shortest":     "/?va%20r1=++dir&var2=text&var3#anchor"
@@ -1533,19 +1533,19 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www.domain.com/?va%20r1=++dir&var2=text&var3#anchor",
+						"absolute":     "http://user:pass@www.domain.com?va%20r1=++dir&var2=text&var3#anchor",
 						"pathRelative": "../?va%20r1=++dir&var2=text&var3#anchor",
 						"rootRelative": "/?va%20r1=++dir&var2=text&var3#anchor",
 						"shortest":     "/?va%20r1=++dir&var2=text&var3#anchor"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/?va%20r1=++dir&var2=text&var3#anchor",
+						"absolute":     "http://user:pass@www.domain.com?va%20r1=++dir&var2=text&var3#anchor",
 						"pathRelative": "../?va%20r1=++dir&var2=text&var3#anchor",
 						"rootRelative": "/?va%20r1=++dir&var2=text&var3#anchor",
 						"shortest":     "/?va%20r1=++dir&var2=text&var3#anchor"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/?va%20r1=++dir&var2=text&var3#anchor",
+						"absolute":     "http://user:pass@www.domain.com?va%20r1=++dir&var2=text&var3#anchor",
 						"pathRelative": "../?va%20r1=++dir&var2=text&var3#anchor",
 						"rootRelative": "/?va%20r1=++dir&var2=text&var3#anchor",
 						"shortest":     "/?va%20r1=++dir&var2=text&var3#anchor"
@@ -1557,19 +1557,19 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www.domain.com/?va%20r1=++dir&var2=text&var3#anchor",
+						"absolute":     "http://user:pass@www.domain.com?va%20r1=++dir&var2=text&var3#anchor",
 						"pathRelative": "../?va%20r1=++dir&var2=text&var3#anchor",
 						"rootRelative": "/?va%20r1=++dir&var2=text&var3#anchor",
 						"shortest":     "/?va%20r1=++dir&var2=text&var3#anchor"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/?va%20r1=++dir&var2=text&var3#anchor",
+						"absolute":     "http://user:pass@www.domain.com?va%20r1=++dir&var2=text&var3#anchor",
 						"pathRelative": "../?va%20r1=++dir&var2=text&var3#anchor",
 						"rootRelative": "/?va%20r1=++dir&var2=text&var3#anchor",
 						"shortest":     "/?va%20r1=++dir&var2=text&var3#anchor"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/?va%20r1=++dir&var2=text&var3#anchor",
+						"absolute":     "http://user:pass@www.domain.com?va%20r1=++dir&var2=text&var3#anchor",
 						"pathRelative": "../?va%20r1=++dir&var2=text&var3#anchor",
 						"rootRelative": "/?va%20r1=++dir&var2=text&var3#anchor",
 						"shortest":     "/?va%20r1=++dir&var2=text&var3#anchor"
@@ -1581,19 +1581,19 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www.domain.com/?va%20r1=++dir&var2=text&var3#anchor",
+						"absolute":     "http://user:pass@www.domain.com?va%20r1=++dir&var2=text&var3#anchor",
 						"pathRelative": "../?va%20r1=++dir&var2=text&var3#anchor",
 						"rootRelative": "/?va%20r1=++dir&var2=text&var3#anchor",
 						"shortest":     "/?va%20r1=++dir&var2=text&var3#anchor"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/?va%20r1=++dir&var2=text&var3#anchor",
+						"absolute":     "http://user:pass@www.domain.com?va%20r1=++dir&var2=text&var3#anchor",
 						"pathRelative": "../?va%20r1=++dir&var2=text&var3#anchor",
 						"rootRelative": "/?va%20r1=++dir&var2=text&var3#anchor",
 						"shortest":     "/?va%20r1=++dir&var2=text&var3#anchor"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/?va%20r1=++dir&var2=text&var3#anchor",
+						"absolute":     "http://user:pass@www.domain.com?va%20r1=++dir&var2=text&var3#anchor",
 						"pathRelative": "../?va%20r1=++dir&var2=text&var3#anchor",
 						"rootRelative": "/?va%20r1=++dir&var2=text&var3#anchor",
 						"shortest":     "/?va%20r1=++dir&var2=text&var3#anchor"
@@ -2281,19 +2281,19 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www.domain.com/?var",
+						"absolute":     "http://user:pass@www.domain.com?var",
 						"pathRelative": "../?var",
 						"rootRelative": "/?var",
 						"shortest":     "/?var"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/?var",
+						"absolute":     "http://user:pass@www.domain.com?var",
 						"pathRelative": "../?var",
 						"rootRelative": "/?var",
 						"shortest":     "/?var"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/?var",
+						"absolute":     "http://user:pass@www.domain.com?var",
 						"pathRelative": "../?var",
 						"rootRelative": "/?var",
 						"shortest":     "/?var"
@@ -2305,19 +2305,19 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www.domain.com/#anchor",
+						"absolute":     "http://user:pass@www.domain.com#anchor",
 						"pathRelative": "../#anchor",
 						"rootRelative": "/#anchor",
 						"shortest":     "/#anchor"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/#anchor",
+						"absolute":     "http://user:pass@www.domain.com#anchor",
 						"pathRelative": "../#anchor",
 						"rootRelative": "/#anchor",
 						"shortest":     "/#anchor"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/#anchor",
+						"absolute":     "http://user:pass@www.domain.com#anchor",
 						"pathRelative": "../#anchor",
 						"rootRelative": "/#anchor",
 						"shortest":     "/#anchor"
@@ -2329,19 +2329,19 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www.domain.com/?var",
+						"absolute":     "http://user:pass@www.domain.com?var",
 						"pathRelative": "../?var",
 						"rootRelative": "/?var",
 						"shortest":     "/?var"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/?var",
+						"absolute":     "http://user:pass@www.domain.com?var",
 						"pathRelative": "../?var",
 						"rootRelative": "/?var",
 						"shortest":     "/?var"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/?var",
+						"absolute":     "http://user:pass@www.domain.com?var",
 						"pathRelative": "../?var",
 						"rootRelative": "/?var",
 						"shortest":     "/?var"
@@ -2353,19 +2353,19 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www.domain.com/#anchor",
+						"absolute":     "http://user:pass@www.domain.com#anchor",
 						"pathRelative": "../#anchor",
 						"rootRelative": "/#anchor",
 						"shortest":     "/#anchor"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/#anchor",
+						"absolute":     "http://user:pass@www.domain.com#anchor",
 						"pathRelative": "../#anchor",
 						"rootRelative": "/#anchor",
 						"shortest":     "/#anchor"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/#anchor",
+						"absolute":     "http://user:pass@www.domain.com#anchor",
 						"pathRelative": "../#anchor",
 						"rootRelative": "/#anchor",
 						"shortest":     "/#anchor"
@@ -2377,19 +2377,19 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www.domain.com/",
+						"absolute":     "http://user:pass@www.domain.com",
 						"pathRelative": "../",
 						"rootRelative": "/",
 						"shortest":     "/"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/",
+						"absolute":     "http://user:pass@www.domain.com",
 						"pathRelative": "../",
 						"rootRelative": "/",
 						"shortest":     "/"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/",
+						"absolute":     "http://user:pass@www.domain.com",
 						"pathRelative": "../",
 						"rootRelative": "/",
 						"shortest":     "/"
@@ -2473,19 +2473,19 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www.domain.com/",
+						"absolute":     "http://user:pass@www.domain.com",
 						"pathRelative": "../",
 						"rootRelative": "/",
 						"shortest":     "/"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/",
+						"absolute":     "http://user:pass@www.domain.com",
 						"pathRelative": "../",
 						"rootRelative": "/",
 						"shortest":     "/"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/",
+						"absolute":     "http://user:pass@www.domain.com",
 						"pathRelative": "../",
 						"rootRelative": "/",
 						"shortest":     "/"
@@ -2569,19 +2569,19 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www.domain.com/#anchor",
+						"absolute":     "http://user:pass@www.domain.com#anchor",
 						"pathRelative": "../#anchor",
 						"rootRelative": "/#anchor",
 						"shortest":     "/#anchor"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/#anchor",
+						"absolute":     "http://user:pass@www.domain.com#anchor",
 						"pathRelative": "../#anchor",
 						"rootRelative": "/#anchor",
 						"shortest":     "/#anchor"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/#anchor",
+						"absolute":     "http://user:pass@www.domain.com#anchor",
 						"pathRelative": "../#anchor",
 						"rootRelative": "/#anchor",
 						"shortest":     "/#anchor"
@@ -2617,19 +2617,19 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www.domain.com/#anchor",
+						"absolute":     "http://user:pass@www.domain.com#anchor",
 						"pathRelative": "../#anchor",
 						"rootRelative": "/#anchor",
 						"shortest":     "/#anchor"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/#anchor",
+						"absolute":     "http://user:pass@www.domain.com#anchor",
 						"pathRelative": "../#anchor",
 						"rootRelative": "/#anchor",
 						"shortest":     "/#anchor"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/#anchor",
+						"absolute":     "http://user:pass@www.domain.com#anchor",
 						"pathRelative": "../#anchor",
 						"rootRelative": "/#anchor",
 						"shortest":     "/#anchor"
@@ -2665,19 +2665,19 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www.domain.com/#",
+						"absolute":     "http://user:pass@www.domain.com#",
 						"pathRelative": "../#",
 						"rootRelative": "/#",
 						"shortest":     "/#"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/#",
+						"absolute":     "http://user:pass@www.domain.com#",
 						"pathRelative": "../#",
 						"rootRelative": "/#",
 						"shortest":     "/#"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/#",
+						"absolute":     "http://user:pass@www.domain.com#",
 						"pathRelative": "../#",
 						"rootRelative": "/#",
 						"shortest":     "/#"
@@ -2713,19 +2713,19 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www.domain.com/#",
+						"absolute":     "http://user:pass@www.domain.com#",
 						"pathRelative": "../#",
 						"rootRelative": "/#",
 						"shortest":     "/#"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/#",
+						"absolute":     "http://user:pass@www.domain.com#",
 						"pathRelative": "../#",
 						"rootRelative": "/#",
 						"shortest":     "/#"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/#",
+						"absolute":     "http://user:pass@www.domain.com#",
 						"pathRelative": "../#",
 						"rootRelative": "/#",
 						"shortest":     "/#"
@@ -2785,19 +2785,19 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www.domain.com/?var",
+						"absolute":     "http://user:pass@www.domain.com?var",
 						"pathRelative": "../?var",
 						"rootRelative": "/?var",
 						"shortest":     "/?var"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/?var",
+						"absolute":     "http://user:pass@www.domain.com?var",
 						"pathRelative": "../?var",
 						"rootRelative": "/?var",
 						"shortest":     "/?var"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/?var",
+						"absolute":     "http://user:pass@www.domain.com?var",
 						"pathRelative": "../?var",
 						"rootRelative": "/?var",
 						"shortest":     "/?var"
@@ -2833,19 +2833,19 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www.domain.com/?var",
+						"absolute":     "http://user:pass@www.domain.com?var",
 						"pathRelative": "../?var",
 						"rootRelative": "/?var",
 						"shortest":     "/?var"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/?var",
+						"absolute":     "http://user:pass@www.domain.com?var",
 						"pathRelative": "../?var",
 						"rootRelative": "/?var",
 						"shortest":     "/?var"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/?var",
+						"absolute":     "http://user:pass@www.domain.com?var",
 						"pathRelative": "../?var",
 						"rootRelative": "/?var",
 						"shortest":     "/?var"
@@ -2881,19 +2881,19 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www.domain.com/",
+						"absolute":     "http://user:pass@www.domain.com",
 						"pathRelative": "../",
 						"rootRelative": "/",
 						"shortest":     "/"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/",
+						"absolute":     "http://user:pass@www.domain.com",
 						"pathRelative": "../",
 						"rootRelative": "/",
 						"shortest":     "/"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/",
+						"absolute":     "http://user:pass@www.domain.com",
 						"pathRelative": "../",
 						"rootRelative": "/",
 						"shortest":     "/"
@@ -2929,19 +2929,19 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www.domain.com/",
+						"absolute":     "http://user:pass@www.domain.com",
 						"pathRelative": "../",
 						"rootRelative": "/",
 						"shortest":     "/"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/",
+						"absolute":     "http://user:pass@www.domain.com",
 						"pathRelative": "../",
 						"rootRelative": "/",
 						"shortest":     "/"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/",
+						"absolute":     "http://user:pass@www.domain.com",
 						"pathRelative": "../",
 						"rootRelative": "/",
 						"shortest":     "/"
@@ -3001,19 +3001,19 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www.domain.com/",
+						"absolute":     "http://user:pass@www.domain.com",
 						"pathRelative": "../",
 						"rootRelative": "/",
 						"shortest":     "/"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/",
+						"absolute":     "http://user:pass@www.domain.com",
 						"pathRelative": "../",
 						"rootRelative": "/",
 						"shortest":     "/"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/",
+						"absolute":     "http://user:pass@www.domain.com",
 						"pathRelative": "../",
 						"rootRelative": "/",
 						"shortest":     "/"
@@ -3049,19 +3049,19 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://user:pass@www.domain.com/",
+						"absolute":     "http://user:pass@www.domain.com",
 						"pathRelative": "../",
 						"rootRelative": "/",
 						"shortest":     "/"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/",
+						"absolute":     "http://user:pass@www.domain.com",
 						"pathRelative": "../",
 						"rootRelative": "/",
 						"shortest":     "/"
 					},
 					{
-						"absolute":     "http://user:pass@www.domain.com/",
+						"absolute":     "http://user:pass@www.domain.com",
 						"pathRelative": "../",
 						"rootRelative": "/",
 						"shortest":     "/"
@@ -3076,22 +3076,22 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "https://user:pass@www.domain.com/",
-						"pathRelative": "https://user:pass@www.domain.com/",
-						"rootRelative": "https://user:pass@www.domain.com/",
-						"shortest":     "https://user:pass@www.domain.com/"
+						"absolute":     "https://user:pass@www.domain.com",
+						"pathRelative": "https://user:pass@www.domain.com",
+						"rootRelative": "https://user:pass@www.domain.com",
+						"shortest":     "https://user:pass@www.domain.com"
 					},
 					{
-						"absolute":     "https://user:pass@www.domain.com/",
-						"pathRelative": "https://user:pass@www.domain.com/",
-						"rootRelative": "https://user:pass@www.domain.com/",
-						"shortest":     "https://user:pass@www.domain.com/"
+						"absolute":     "https://user:pass@www.domain.com",
+						"pathRelative": "https://user:pass@www.domain.com",
+						"rootRelative": "https://user:pass@www.domain.com",
+						"shortest":     "https://user:pass@www.domain.com"
 					},
 					{
-						"absolute":     "https://user:pass@www.domain.com/",
-						"pathRelative": "https://user:pass@www.domain.com/",
-						"rootRelative": "https://user:pass@www.domain.com/",
-						"shortest":     "https://user:pass@www.domain.com/"
+						"absolute":     "https://user:pass@www.domain.com",
+						"pathRelative": "https://user:pass@www.domain.com",
+						"rootRelative": "https://user:pass@www.domain.com",
+						"shortest":     "https://user:pass@www.domain.com"
 					}
 				]
 			},
@@ -3100,22 +3100,22 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "ftp://user:pass@www.domain.com:80/",
-						"pathRelative": "ftp://user:pass@www.domain.com:80/",
-						"rootRelative": "ftp://user:pass@www.domain.com:80/",
-						"shortest":     "ftp://user:pass@www.domain.com:80/"
+						"absolute":     "ftp://user:pass@www.domain.com:80",
+						"pathRelative": "ftp://user:pass@www.domain.com:80",
+						"rootRelative": "ftp://user:pass@www.domain.com:80",
+						"shortest":     "ftp://user:pass@www.domain.com:80"
 					},
 					{
-						"absolute":     "ftp://user:pass@www.domain.com:80/",
-						"pathRelative": "ftp://user:pass@www.domain.com:80/",
-						"rootRelative": "ftp://user:pass@www.domain.com:80/",
-						"shortest":     "ftp://user:pass@www.domain.com:80/"
+						"absolute":     "ftp://user:pass@www.domain.com:80",
+						"pathRelative": "ftp://user:pass@www.domain.com:80",
+						"rootRelative": "ftp://user:pass@www.domain.com:80",
+						"shortest":     "ftp://user:pass@www.domain.com:80"
 					},
 					{
-						"absolute":     "ftp://user:pass@www.domain.com:80/",
-						"pathRelative": "ftp://user:pass@www.domain.com:80/",
-						"rootRelative": "ftp://user:pass@www.domain.com:80/",
-						"shortest":     "ftp://user:pass@www.domain.com:80/"
+						"absolute":     "ftp://user:pass@www.domain.com:80",
+						"pathRelative": "ftp://user:pass@www.domain.com:80",
+						"rootRelative": "ftp://user:pass@www.domain.com:80",
+						"shortest":     "ftp://user:pass@www.domain.com:80"
 					}
 				]
 			},
@@ -3124,22 +3124,22 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "ftp://user:pass@www.domain.com/",
-						"pathRelative": "ftp://user:pass@www.domain.com/",
-						"rootRelative": "ftp://user:pass@www.domain.com/",
-						"shortest":     "ftp://user:pass@www.domain.com/"
+						"absolute":     "ftp://user:pass@www.domain.com",
+						"pathRelative": "ftp://user:pass@www.domain.com",
+						"rootRelative": "ftp://user:pass@www.domain.com",
+						"shortest":     "ftp://user:pass@www.domain.com"
 					},
 					{
-						"absolute":     "ftp://user:pass@www.domain.com/",
-						"pathRelative": "ftp://user:pass@www.domain.com/",
-						"rootRelative": "ftp://user:pass@www.domain.com/",
-						"shortest":     "ftp://user:pass@www.domain.com/"
+						"absolute":     "ftp://user:pass@www.domain.com",
+						"pathRelative": "ftp://user:pass@www.domain.com",
+						"rootRelative": "ftp://user:pass@www.domain.com",
+						"shortest":     "ftp://user:pass@www.domain.com"
 					},
 					{
-						"absolute":     "ftp://user:pass@www.domain.com/",
-						"pathRelative": "ftp://user:pass@www.domain.com/",
-						"rootRelative": "ftp://user:pass@www.domain.com/",
-						"shortest":     "ftp://user:pass@www.domain.com/"
+						"absolute":     "ftp://user:pass@www.domain.com",
+						"pathRelative": "ftp://user:pass@www.domain.com",
+						"rootRelative": "ftp://user:pass@www.domain.com",
+						"shortest":     "ftp://user:pass@www.domain.com"
 					}
 				]
 			},
@@ -3172,22 +3172,22 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "ssh://user:pass@www.domain.com:22/",
-						"pathRelative": "ssh://user:pass@www.domain.com:22/",
-						"rootRelative": "ssh://user:pass@www.domain.com:22/",
-						"shortest":     "ssh://user:pass@www.domain.com:22/"
+						"absolute":     "ssh://user:pass@www.domain.com:22",
+						"pathRelative": "ssh://user:pass@www.domain.com:22",
+						"rootRelative": "ssh://user:pass@www.domain.com:22",
+						"shortest":     "ssh://user:pass@www.domain.com:22"
 					},
 					{
-						"absolute":     "ssh://user:pass@www.domain.com:22/",
-						"pathRelative": "ssh://user:pass@www.domain.com:22/",
-						"rootRelative": "ssh://user:pass@www.domain.com:22/",
-						"shortest":     "ssh://user:pass@www.domain.com:22/"
+						"absolute":     "ssh://user:pass@www.domain.com:22",
+						"pathRelative": "ssh://user:pass@www.domain.com:22",
+						"rootRelative": "ssh://user:pass@www.domain.com:22",
+						"shortest":     "ssh://user:pass@www.domain.com:22"
 					},
 					{
-						"absolute":     "ssh://user:pass@www.domain.com:22/",
-						"pathRelative": "ssh://user:pass@www.domain.com:22/",
-						"rootRelative": "ssh://user:pass@www.domain.com:22/",
-						"shortest":     "ssh://user:pass@www.domain.com:22/"
+						"absolute":     "ssh://user:pass@www.domain.com:22",
+						"pathRelative": "ssh://user:pass@www.domain.com:22",
+						"rootRelative": "ssh://user:pass@www.domain.com:22",
+						"shortest":     "ssh://user:pass@www.domain.com:22"
 					}
 				]
 			}
@@ -3199,22 +3199,22 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://www.other-domain.com/",
-						"pathRelative": "//www.other-domain.com/",
-						"rootRelative": "//www.other-domain.com/",
-						"shortest":     "//www.other-domain.com/"
+						"absolute":     "http://www.other-domain.com",
+						"pathRelative": "//www.other-domain.com",
+						"rootRelative": "//www.other-domain.com",
+						"shortest":     "//www.other-domain.com"
 					},
 					{
-						"absolute":     "http://www.other-domain.com/",
-						"pathRelative": "//www.other-domain.com/",
-						"rootRelative": "//www.other-domain.com/",
-						"shortest":     "//www.other-domain.com/"
+						"absolute":     "http://www.other-domain.com",
+						"pathRelative": "//www.other-domain.com",
+						"rootRelative": "//www.other-domain.com",
+						"shortest":     "//www.other-domain.com"
 					},
 					{
-						"absolute":     "http://www.other-domain.com/",
-						"pathRelative": "//www.other-domain.com/",
-						"rootRelative": "//www.other-domain.com/",
-						"shortest":     "//www.other-domain.com/"
+						"absolute":     "http://www.other-domain.com",
+						"pathRelative": "//www.other-domain.com",
+						"rootRelative": "//www.other-domain.com",
+						"shortest":     "//www.other-domain.com"
 					}
 				]
 			},
@@ -3223,22 +3223,22 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://255.255.255.255/",
-						"pathRelative": "//255.255.255.255/",
-						"rootRelative": "//255.255.255.255/",
-						"shortest":     "//255.255.255.255/"
+						"absolute":     "http://255.255.255.255",
+						"pathRelative": "//255.255.255.255",
+						"rootRelative": "//255.255.255.255",
+						"shortest":     "//255.255.255.255"
 					},
 					{
-						"absolute":     "http://255.255.255.255/",
-						"pathRelative": "//255.255.255.255/",
-						"rootRelative": "//255.255.255.255/",
-						"shortest":     "//255.255.255.255/"
+						"absolute":     "http://255.255.255.255",
+						"pathRelative": "//255.255.255.255",
+						"rootRelative": "//255.255.255.255",
+						"shortest":     "//255.255.255.255"
 					},
 					{
-						"absolute":     "http://255.255.255.255/",
-						"pathRelative": "//255.255.255.255/",
-						"rootRelative": "//255.255.255.255/",
-						"shortest":     "//255.255.255.255/"
+						"absolute":     "http://255.255.255.255",
+						"pathRelative": "//255.255.255.255",
+						"rootRelative": "//255.255.255.255",
+						"shortest":     "//255.255.255.255"
 					}
 				]
 			},
@@ -3247,22 +3247,22 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://1337.net/",
-						"pathRelative": "//1337.net/",
-						"rootRelative": "//1337.net/",
-						"shortest":     "//1337.net/"
+						"absolute":     "http://1337.net",
+						"pathRelative": "//1337.net",
+						"rootRelative": "//1337.net",
+						"shortest":     "//1337.net"
 					},
 					{
-						"absolute":     "http://1337.net/",
-						"pathRelative": "//1337.net/",
-						"rootRelative": "//1337.net/",
-						"shortest":     "//1337.net/"
+						"absolute":     "http://1337.net",
+						"pathRelative": "//1337.net",
+						"rootRelative": "//1337.net",
+						"shortest":     "//1337.net"
 					},
 					{
-						"absolute":     "http://1337.net/",
-						"pathRelative": "//1337.net/",
-						"rootRelative": "//1337.net/",
-						"shortest":     "//1337.net/"
+						"absolute":     "http://1337.net",
+						"pathRelative": "//1337.net",
+						"rootRelative": "//1337.net",
+						"shortest":     "//1337.net"
 					}
 				]
 			},
@@ -3271,22 +3271,22 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://a.bc/",
-						"pathRelative": "//a.bc/",
-						"rootRelative": "//a.bc/",
-						"shortest":     "//a.bc/"
+						"absolute":     "http://a.bc",
+						"pathRelative": "//a.bc",
+						"rootRelative": "//a.bc",
+						"shortest":     "//a.bc"
 					},
 					{
-						"absolute":     "http://a.bc/",
-						"pathRelative": "//a.bc/",
-						"rootRelative": "//a.bc/",
-						"shortest":     "//a.bc/"
+						"absolute":     "http://a.bc",
+						"pathRelative": "//a.bc",
+						"rootRelative": "//a.bc",
+						"shortest":     "//a.bc"
 					},
 					{
-						"absolute":     "http://a.bc/",
-						"pathRelative": "//a.bc/",
-						"rootRelative": "//a.bc/",
-						"shortest":     "//a.bc/"
+						"absolute":     "http://a.bc",
+						"pathRelative": "//a.bc",
+						"rootRelative": "//a.bc",
+						"shortest":     "//a.bc"
 					}
 				]
 			}
@@ -3373,22 +3373,22 @@ module.exports =
 				"expected":
 				[
 					{
-						"absolute":     "http://-.~_!$&'()*+,;=:@:80/::::::@example.com/",	// Shouldn't these be urlencoded ?
-						"pathRelative": "//-.~_!$&'()*+,;=:@:80/::::::@example.com/",		// Shouldn't these be urlencoded ?
-						"rootRelative": "//-.~_!$&'()*+,;=:@:80/::::::@example.com/",		// Shouldn't these be urlencoded ?
-						"shortest":     "//-.~_!$&'()*+,;=:@:80/::::::@example.com/"		// Shouldn't these be urlencoded ?
+						"absolute":     "http://-.~_!$&'()*+,;=:@:80/::::::@example.com",	// Shouldn't these be urlencoded ?
+						"pathRelative": "//-.~_!$&'()*+,;=:@:80/::::::@example.com",		// Shouldn't these be urlencoded ?
+						"rootRelative": "//-.~_!$&'()*+,;=:@:80/::::::@example.com",		// Shouldn't these be urlencoded ?
+						"shortest":     "//-.~_!$&'()*+,;=:@:80/::::::@example.com"			// Shouldn't these be urlencoded ?
 					},
 					{
-						"absolute":     "http://-.~_!$&'()*+,;=:@:80/::::::@example.com/",
-						"pathRelative": "//-.~_!$&'()*+,;=:@:80/::::::@example.com/",
-						"rootRelative": "//-.~_!$&'()*+,;=:@:80/::::::@example.com/",
-						"shortest":     "//-.~_!$&'()*+,;=:@:80/::::::@example.com/"
+						"absolute":     "http://-.~_!$&'()*+,;=:@:80/::::::@example.com",
+						"pathRelative": "//-.~_!$&'()*+,;=:@:80/::::::@example.com",
+						"rootRelative": "//-.~_!$&'()*+,;=:@:80/::::::@example.com",
+						"shortest":     "//-.~_!$&'()*+,;=:@:80/::::::@example.com"
 					},
 					{
-						"absolute":     "http://-.~_!$&'()*+,;=:@:80/::::::@example.com/",
-						"pathRelative": "//-.~_!$&'()*+,;=:@:80/::::::@example.com/",
-						"rootRelative": "//-.~_!$&'()*+,;=:@:80/::::::@example.com/",
-						"shortest":     "//-.~_!$&'()*+,;=:@:80/::::::@example.com/"
+						"absolute":     "http://-.~_!$&'()*+,;=:@:80/::::::@example.com",
+						"pathRelative": "//-.~_!$&'()*+,;=:@:80/::::::@example.com",
+						"rootRelative": "//-.~_!$&'()*+,;=:@:80/::::::@example.com",
+						"shortest":     "//-.~_!$&'()*+,;=:@:80/::::::@example.com"
 					}
 				]
 			}

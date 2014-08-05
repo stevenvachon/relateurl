@@ -43,8 +43,9 @@ Default value: `false`
 This will, for example, consider any domains containing `http://www.example.com/` to be related to any that contain `http://example.com/`.
 
 #### options.output
-Type: constant  
+Type: constant or `String`  
 Choices: `RelateUrl.ABSOLUTE`,`RelateUrl.PATH_RELATIVE`,`RelateUrl.ROOT_RELATIVE`,`RelateUrl.SHORTEST`  
+Choices: `"absolute"`,`"pathRelative"`,`"rootRelative"`,`"shortest"`  
 Default value: `RelateUrl.SHORTEST`  
 
 `RelateUrl.ABSOLUTE` will produce an absolute URL. Overrides [`options.schemeRelative`](#options.schemeRelative) with a value of `false`.  
@@ -75,6 +76,12 @@ Type: `Boolean`
 Default value: `false`  
 
 Remove empty query variables. Example: `http://domain.com/?var1&var2=&var3=asdf` will become `http://domain.com/?var3=adsf`. This does not apply to unrelated URLs (with other protocols, auths, hosts and/or ports).
+
+#### options.removeRootTrailingSlash
+Type: `Boolean`   
+Default value: `true`  
+
+Remove trailing slashes from root paths. Example: `http://domain.com/?var` will become `http://domain.com?var` while `http://domain.com/dir/?var` will not be modified.
 
 #### options.schemeRelative
 Type: `Boolean`   
@@ -119,12 +126,13 @@ var result3 = instance.relate(to3);
 
 ## FAQ
 1. **Why bother writing/using this?**  
-To aid in further minifying HTML, mainly for the purpose of faster page loads and SEO.
+To aid in further minifying HTML, mainly for the purpose of faster page loads and SEO. It's been integrated into [HTMLMinifier](https://github.com/kangax/html-minifier).
 
 2. **Why not just use Node's `url.parse`, `url.resolve` and `path.relative`?**  
 `url.parse` *is* used, but `url.resolve` and `path.relative` are both slower and less powerful than this library.
 
 ## Release History
+* 0.2.5 added `options.removeRootTrailingSlash`
 * 0.2.4 added `options.site`
 * 0.2.3 added browserify npm-script
 * 0.2.2 removed task runner
@@ -133,7 +141,6 @@ To aid in further minifying HTML, mainly for the purpose of faster page loads an
 * 0.1.0 initial release
 
 ## Roadmap
-* 0.2.5 shorten absolute URLs like `http://domain.com/?var` to `http://domain.com?var`, etc
 * 0.2.6 decipher and return invalid input (special cases) to complete test suite
 * 0.3.0 test `options.slashesDenoteHost=false`, add something like `options.externalDirectoryIndexes=[]` for external sites
 
