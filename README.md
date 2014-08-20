@@ -141,6 +141,7 @@ To aid in further minifying HTML, mainly for the purpose of faster page loads an
 * 0.1.0 initial release
 
 ## Roadmap
+* 0.2.6 possible [scheme exclusions](http://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml) such as `tel:`
 * 0.2.6 decipher and return invalid input (special cases) to complete test suite
 * 0.3.0 test `options.slashesDenoteHost=false`, add something like `options.externalDirectoryIndexes=[]` for external sites
 

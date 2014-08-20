@@ -16,6 +16,12 @@
   "bugs": {
     "url": "https://github.com/stevenvachon/relateurl/issues"
   },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/mit-license.php"
+    }
+  ],
   "devDependencies": {
     "browserify": "^5.9",
     "chai": "^1.9",
