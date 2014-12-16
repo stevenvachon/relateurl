@@ -90,7 +90,7 @@ function traverse(obj, siteIndex, expectedResult, callback)
 	{
 		if (obj.hasOwnProperty("href"))
 		{
-			expectedResult = /*(siteIndex >== 0) ?*/ obj.expected[siteIndex][expectedResult] /*: obj[expectedResult]*/;
+			expectedResult = /*(siteIndex >= 0) ?*/ obj.expected[siteIndex][expectedResult] /*: obj[expectedResult]*/;
 			
 			cancel = callback(obj.href, expectedResult) === false;
 		}
