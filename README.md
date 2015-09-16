@@ -1,4 +1,4 @@
-# relateurl [![NPM Version](http://badge.fury.io/js/relateurl.svg)](http://badge.fury.io/js/relateurl) [![Build Status](https://secure.travis-ci.org/stevenvachon/relateurl.svg)](http://travis-ci.org/stevenvachon/relateurl)
+# relateurl [![NPM Version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][david-image]][david-url]
 
 > Minify URLs by converting them from absolute to relative.
 
@@ -17,7 +17,7 @@ If you were to use this library on a website like `http://example.com/dir1/dir1-
 
 ## Getting Started
 
-This utility requires [Node.js](http://nodejs.org/) `~0.10`. To install, type this at the command line:
+This utility requires [Node.js](http://nodejs.org/) `>= 0.10`. To install, type this at the command line:
 ```
 npm install relateurl --save-dev
 ```
@@ -131,7 +131,9 @@ To aid in further minifying HTML, mainly for the purpose of faster page loads an
 2. **Why not just use Node's `url.parse`, `url.resolve` and `path.relative`?**  
 `url.parse` *is* used, but `url.resolve` and `path.relative` are both slower and less powerful than this library.
 
+
 ## Release History
+* 0.2.7 Node v6 support
 * 0.2.6 minor enhancements
 * 0.2.5 added `options.removeRootTrailingSlash`
 * 0.2.4 added `options.site`
@@ -141,11 +143,17 @@ To aid in further minifying HTML, mainly for the purpose of faster page loads an
 * 0.2.0 code cleanup, `options.removeEmptyQueries=true` only applied to unrelated URLs
 * 0.1.0 initial release
 
+
 ## Roadmap
-* 0.2.7 possible [scheme exclusions](http://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml) such as `tel:`
-* 0.2.7 decipher and return invalid input (special cases) to complete test suite
+* 0.2.8 check if queries are the same, regardless of param order
+* 0.2.8 possible [scheme exclusions](http://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml) such as `tel:`
+* 0.2.8 decipher and return invalid input (special cases) to complete test suite
 * 0.3.0 test `options.slashesDenoteHost=false`, add something like `options.externalDirectoryIndexes=[]` for external sites
 
----
 
-[![Analytics](https://ga-beacon.appspot.com/UA-3614308-13/stevenvachon/relateurl)](https://github.com/igrigorik/ga-beacon "Google Analytics")
+[npm-image]: https://img.shields.io/npm/v/relateurl.svg
+[npm-url]: https://npmjs.org/package/relateurl
+[travis-image]: https://img.shields.io/travis/stevenvachon/relateurl.svg
+[travis-url]: https://travis-ci.org/stevenvachon/relateurl
+[david-image]: https://img.shields.io/david/stevenvachon/relateurl.svg
+[david-url]: https://david-dm.org/stevenvachon/relateurl
