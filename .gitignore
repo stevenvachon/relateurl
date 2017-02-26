@@ -1,2 +1,6 @@
+coverage/
+index-es5.js
+index-es5.js.map
 node_modules/
-relateurl-browser.js
+.nyc_output/
+package-lock.json
