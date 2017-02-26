@@ -1,2 +1,5 @@
+coverage/
+index-es5.js
+index-es5.js.map
 node_modules/
-relateurl-browser.js
+package-lock.json
