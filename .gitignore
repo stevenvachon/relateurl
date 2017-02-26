@@ -1,2 +1,5 @@
+coverage/
+lib/
 node_modules/
-relateurl-browser.js
+.nyc_output/
+package-lock.json
