@@ -8,7 +8,7 @@
   "dependencies": {
     "cloneurl": "^2.0.0",
     "deep-freeze-node": "^1.1.3",
-    "evaluate-value": "^1.0.2",
+    "evaluate-value": "^2.0.0",
     "isurl": "^4.0.0",
     "minurl": "github:stevenvachon/minurl",
     "url-relation": "github:stevenvachon/url-relation"
